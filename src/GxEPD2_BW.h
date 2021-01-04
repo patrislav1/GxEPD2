@@ -511,6 +511,10 @@ class GxEPD2_BW : public Adafruit_GFX
     {
       epd2.hibernate();
     }
+    uint8_t* getBuffer()
+    {
+      return _buffer;
+    }
   private:
     template <typename T> static inline void
     _swap_(T & a, T & b)
